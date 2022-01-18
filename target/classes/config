@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 maxRowsNumber=50000
+=======
+maxRowsNumber=500
+>>>>>>> 544e1935b6f323a02771f49f19e1e9fcfaa7d1d4
 minNumberOfFiles=1
 firstRowNumber=0

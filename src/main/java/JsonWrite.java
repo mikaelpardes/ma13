@@ -8,8 +8,13 @@ import java.util.Scanner;
 public class JsonWrite<T>{
 
     public Integer numberOfFiles(List<T> l1) {
+<<<<<<< HEAD
         int maxRowsNumber= Config.DATA.getValue1();
         int minNumberOfFiles= Config.DATA.getValue2();
+=======
+        int maxRowsNumber=Config.DATA.getValue1();
+        int minNumberOfFiles=Config.DATA.getValue2();
+>>>>>>> 544e1935b6f323a02771f49f19e1e9fcfaa7d1d4
         int csvRowsNum = l1.size();
         int numOfFiles = minNumberOfFiles;
         if (csvRowsNum > maxRowsNumber) {
@@ -19,7 +24,11 @@ public class JsonWrite<T>{
     }
 
     public void opensJsonFiles(List<T> l1) {
+<<<<<<< HEAD
         int maxRowsNumber= Config.DATA.getValue1();
+=======
+        int maxRowsNumber=Config.DATA.getValue1();
+>>>>>>> 544e1935b6f323a02771f49f19e1e9fcfaa7d1d4
         Scanner scanner = new Scanner(System.in);
         String path;
         int rowsStart = Config.DATA.getValue3();
@@ -57,7 +66,11 @@ public class JsonWrite<T>{
     }
 
     public void managerOfOpenFiles(List<T> l1) {
+<<<<<<< HEAD
         int minNumberOfFiles= Config.DATA.getValue2();
+=======
+        int minNumberOfFiles=Config.DATA.getValue2();
+>>>>>>> 544e1935b6f323a02771f49f19e1e9fcfaa7d1d4
         if (numberOfFiles(l1) > minNumberOfFiles) {
             opensJsonFiles(l1);
         } else {
