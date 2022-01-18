@@ -24,8 +24,5 @@ public enum Config {DATA;
     }
     public Integer getValue1() {return value1;}
     public Integer getValue2() {return value2;}
-
-    public Integer getValue3() {
-        return value3;
-    }
+    public Integer getValue3() {return value3;}
 }
