@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
@@ -24,20 +23,5 @@ public class Main {
 
 
 
-=======
-
-import OpenObject.MadaReports;
-import ReadFile.MadaReportsReader;
-
-import java.util.List;
-
-
-public class Main {
-    public static void main(String[] args) {
-        MadaReportsReader madaReportsReader = new MadaReportsReader("csv", "src/main/resources/OpenObject.MadaReports.csv");
-        List<MadaReports> madaReports = madaReportsReader.readFromCSV();
-        JsonWrite jsonWrite = new JsonWrite();
-        jsonWrite.managerOfOpenFiles(madaReports);
->>>>>>> 544e1935b6f323a02771f49f19e1e9fcfaa7d1d4
     }
 }
