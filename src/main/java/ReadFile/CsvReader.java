@@ -1,7 +1,11 @@
+package ReadFile;
+
+import ReadFile.DataReader;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class CsvReader<T> extends DataReader{
+public class CsvReader<T> extends DataReader {
 
     private String filePath;
     public CsvReader(String dataKind,String filePath) {

@@ -1,4 +1,6 @@
-public class MadaReports extends BuildObject{
+package OpenObject;
+
+public class MadaReports extends BuildObject {
     private String mdaCode;
     private String idNum;
     private String idType;
@@ -184,7 +186,7 @@ public class MadaReports extends BuildObject{
 
     @Override
     public String toString() {
-        return "MadaReports{" +
+        return "OpenObject.MadaReports{" +
                 "mdaCode='" + mdaCode + '\'' +
                 ", idNum='" + idNum + '\'' +
                 ", idType='" + idType + '\'' +

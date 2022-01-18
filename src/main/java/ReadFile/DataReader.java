@@ -1,3 +1,5 @@
+package ReadFile;
+
 public abstract class DataReader{
     private String dataKind;
     public DataReader(String dataKind){
