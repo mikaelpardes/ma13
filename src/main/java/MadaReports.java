@@ -1,4 +1,4 @@
-public class MadaReportsBuilder extends BuildObject{
+public class MadaReports extends BuildObject{
     private String mdaCode;
     private String idNum;
     private String idType;
@@ -12,60 +12,76 @@ public class MadaReportsBuilder extends BuildObject{
     private String takeDate;
     private String resultDate;
 
-    public MadaReportsBuilder madacode(String madaCode){
+    public MadaReports(String mdaCode,String idNum,String idType,String firstName,String lastName,
+                       String city,String street,String buildingNumber,String barCode,String getDate,String takeDate,String resultDate){
+        this.mdaCode=mdaCode;
+        this.idNum=idNum;
+        this.idType=idType;
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.city=city;
+        this.street=street;
+        this.buildingNumber=buildingNumber;
+        this.barCode=barCode;
+        this.getDate=getDate;
+        this.takeDate=takeDate;
+        this.resultDate=resultDate;
+    }
+
+    public MadaReports madacode(String madaCode){
         this.mdaCode=madaCode;
         return this;
     }
 
-    public MadaReportsBuilder idNum (String idNum){
+    public MadaReports idNum (String idNum){
         this.idNum=idNum;
         return this;
     }
 
-    public MadaReportsBuilder idType(String idType){
+    public MadaReports idType(String idType){
         this.idType=idType;
         return this;
     }
-    public MadaReportsBuilder firstName(String firstName){
+    public MadaReports firstName(String firstName){
         this.firstName=firstName;
         return this;
     }
-    public MadaReportsBuilder lastName(String lastName){
+    public MadaReports lastName(String lastName){
         this.lastName=lastName;
         return this;
     }
 
-    public MadaReportsBuilder city(String city){
+    public MadaReports city(String city){
         this.city=city;
         return this;
     }
 
-    public MadaReportsBuilder street(String street){
+    public MadaReports street(String street){
         this.street=street;
         return this;
     }
 
-    public MadaReportsBuilder buildingNumber(String buildingNumber){
+    public MadaReports buildingNumber(String buildingNumber){
        this.buildingNumber=buildingNumber;
         return this;
     }
 
-    public MadaReportsBuilder barCode(String barCode){
+    public MadaReports barCode(String barCode){
         this.barCode=barCode;
         return this;
     }
 
-    public MadaReportsBuilder getDate(String getDate){
+    public MadaReports getDate(String getDate){
         this.getDate=getDate;
         return this;
     }
 
-    public MadaReportsBuilder takeDate(String takeDate){
+    public MadaReports takeDate(String takeDate){
        this.takeDate=takeDate;
         return this;
     }
 
-    public MadaReportsBuilder resultDate(String resultDate){
+    public MadaReports resultDate(String resultDate){
        this.resultDate=resultDate;
         return this;
     }
